@@ -1,0 +1,351 @@
+body {
+    line-height: 1.6;
+    margin: 0;
+    color: #333;
+}
+
+
+
+/*  Header  */
+
+
+
+.header {
+    display: grid;
+    font-family: "Metamorphous";
+    font-size: 20px;
+    text-transform: uppercase;
+    grid-template-columns: auto 1fr auto auto;
+    align-items: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+.logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    list-style: none;
+    gap: 55px;
+}
+
+nav a {
+    text-decoration: none;
+    background: linear-gradient(90deg, #1f1f1fb4, #5e63623e);
+    color: rgb(255, 255, 255);
+    padding: 8px 25px;
+    border-radius: 60px;
+    transition: 0.s;
+}
+
+nav a:hover {
+    color: #1f1f1f;
+    background: linear-gradient(90deg, rgb(155, 155, 155), #777777a2);
+}
+
+
+
+/* FONDO 1ERA SECCION */
+
+
+
+.fondo {
+    position: relative;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.videofondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.titulovideo {
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.titulovideo h1 {
+    font-family: "Pirata One";
+    font-size: 8em;
+    font-weight: 900;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.861);
+    margin-bottom: 40px;
+    text-shadow: 25px 30px 10px rgba(250, 250, 250, 0.734);
+}
+
+.titulovideo .boton {
+    font-size: 1.3em;
+    padding: 20px 50px;
+    background-color: #6a0000e0;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.titulovideo .boton:hover {
+    transition: 0.5s;
+    font-size: 1.2em;
+    color: #000000;
+    background-color: #0602269b;
+}
+
+
+
+/* 2SECCION DATOS  */
+
+
+
+.datos {
+    display: grid;
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(#606060, #ffffff);
+    color: white;
+    gap: 10px;
+}
+
+.datos h2 {
+    font-family: "Special Elite";
+    font-size: 2.8em;
+}
+
+.datos p {
+    font-family: "Love Ya Like A Sister";
+    font-size: 1.8em;
+    color: #1f1f1f;
+}
+
+
+
+/* 3SECCION FORMULARIO */
+
+
+
+.formulario {
+    font-family: "Ga Maamli";
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: linear-gradient(#4431314c, #792222);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario .imageN {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.formulario .form {
+    display: grid;
+    gap: 15px;
+}
+
+.form label {
+    font-weight: bold;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #555;
+}
+
+
+
+/* 4SECCION UBICACCION */
+
+
+
+.ubicacion {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(#ffffff, #9e9e9e, #ffffff);
+    color: rgb(0, 0, 0);
+}
+
+.ubicacion h2 {
+    font-family: "Special Elite";
+    font-size: 4em;
+    margin-bottom: 10px;
+}
+
+.ubicacion p {
+    font-family: "Love Ya Like A Sister";
+    color: #0e0e0e;
+    font-size: 1.8em;
+}
+
+
+
+/* 5SECCION MAPA*/
+
+
+
+.contenedor {
+    background: linear-gradient(#ffffff, #32526b);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.contenedor col{
+    width: 100%;
+    max-width: 600px; 
+    height: 400px; 
+}
+
+
+
+/* 6SECCION GALERIA */
+
+
+
+.Galeria {
+    display: grid;
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(#32526b, #ac2b2b, rgba(255, 255, 255, 0.49));
+    color: white;
+    gap: 10px;
+}
+
+.Galeria h2 {
+    font-family: "Special Elite";
+    font-size: 6em;
+}
+
+.Galeria p {
+    font-family: "Love Ya Like A Sister";
+    font-size: 3em;
+    color: #1f1f1f;
+}
+
+
+
+/* 7SECCION GALERIA IMAGENES */
+
+
+
+.contenedorgaleria {
+    font-family: "Trade Winds";
+    display: grid;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-shadow: 3px 3px 10px black;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+    width: 75%;
+    max-width: 120000px;
+    margin: 0 auto;
+}
+
+.secciongaleria {
+    position: relative;
+    overflow: hidden;
+    border: 3px dashed #717171;
+    border-radius: 8px;
+    box-shadow: 10px 10px 8px rgba(17, 14, 14, 0.626);
+    transition: transform 0.3s ease, 0.3s ease;
+}
+
+.secciongaleria:hover {
+    transform: scale(1.05);
+    box-shadow: 30px 30px 12px rgba(0, 0, 0, 0.2);
+}
+
+.secciongaleria img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.secciongaleria .description {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+
+
+/* 8SECCION Footer */
+
+
+
+footer {
+    font-family: "Love Ya Like A Sister";
+    background-color: #333;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Tres columnas */
+    grid-template-rows: auto auto; /* Dos filas */
+    padding: 20px;
+    gap: 10px; /* Espaciado entre celdas */
+    text-align: center;
+  }
+
+  .iconos {
+    font-size: 50px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+  }
+
+  .iconos li{
+    color: red;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .contacto, .institucion, .docente {
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+
+  footer div {
+    padding: 10px;
+  }
